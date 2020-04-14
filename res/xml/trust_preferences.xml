@@ -37,10 +37,13 @@
             android:entryValues="@array/trust_restrict_usb_values"
             android:defaultValue="0" />
 
+<<<<<<< HEAD
         <lineageos.preference.LineagePartsPreference
             android:key="lineagestats"
             android:icon="@drawable/ic_counter" />
 
+=======
+>>>>>>> aa8e5d8d (Remove analytics)
         <ListPreference
             android:key="sms_security_check_limit"
             android:icon="@drawable/ic_message_alert"
