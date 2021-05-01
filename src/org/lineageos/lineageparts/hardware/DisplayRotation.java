@@ -13,9 +13,9 @@ import android.os.Bundle;
 import android.os.UserHandle;
 import android.provider.Settings;
 
-import androidx.preference.CheckBoxPreference;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreference;
 
 import com.android.internal.view.RotationPolicy;
 import com.android.settingslib.widget.MainSwitchPreference;
@@ -34,10 +34,10 @@ public class DisplayRotation extends SettingsPreferenceFragment {
     private static final String LOCKSCREEN_ROTATION_PREF = "lockscreen_rotation";
 
     private MainSwitchPreference mAccelerometer;
-    private CheckBoxPreference mRotation0Pref;
-    private CheckBoxPreference mRotation90Pref;
-    private CheckBoxPreference mRotation180Pref;
-    private CheckBoxPreference mRotation270Pref;
+    private SwitchPreference mRotation0Pref;
+    private SwitchPreference mRotation90Pref;
+    private SwitchPreference mRotation180Pref;
+    private SwitchPreference mRotation270Pref;
     private Preference mLockscreenRotationPref;
 
     public static final int ROTATION_0_MODE = 1;
