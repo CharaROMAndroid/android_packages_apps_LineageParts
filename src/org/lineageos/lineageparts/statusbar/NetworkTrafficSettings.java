@@ -1,5 +1,5 @@
 /*
- * SPDX-FileCopyrightText: 2017-2026 The LineageOS Project
+ * SPDX-FileCopyrightText: 2017-2023 The LineageOS Project
  * SPDX-License-Identifier: Apache-2.0
  */
 
@@ -43,7 +43,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
     private ListPreference mNetTrafficMode;
     private ListPreference mNetTrafficPosition;
     private LineageSecureSettingSwitchPreference mNetTrafficAutohide;
-    private LineageSecureSettingSwitchPreference mNetTrafficHideArrows;
     private ListPreference mNetTrafficUnits;
     private ListPreference mNetTrafficShowUnits;
 
@@ -98,9 +97,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
 
         mNetTrafficAutohide = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_AUTOHIDE);
         mNetTrafficAutohide.setOnPreferenceChangeListener(this);
-
-        mNetTrafficHideArrows = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_HIDE_ARROWS);
-        mNetTrafficHideArrows.setOnPreferenceChangeListener(this);
 
         mNetTrafficUnits = findPreference(LineageSettings.Secure.NETWORK_TRAFFIC_UNITS);
         mNetTrafficUnits.setOnPreferenceChangeListener(this);
@@ -176,7 +172,6 @@ public class NetworkTrafficSettings extends SettingsPreferenceFragment
         final boolean enabled = mode != 0;
         mNetTrafficPosition.setEnabled(enabled);
         mNetTrafficAutohide.setEnabled(enabled);
-        mNetTrafficHideArrows.setEnabled(enabled);
         mNetTrafficUnits.setEnabled(enabled);
         mNetTrafficShowUnits.setEnabled(enabled);
     }
